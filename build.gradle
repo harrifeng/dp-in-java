@@ -6,8 +6,14 @@
  * user guide available at https://docs.gradle.org/4.1/userguide/java_library_plugin.html
  */
 
+plugins {
+    id 'com.github.sherter.google-java-format' version '0.6'
+}
+
 // Apply the java-library plugin to add support for Java Library
 apply plugin: 'java-library'
+
+
 
 // In this section you declare where to find the dependencies of your project
 repositories {
@@ -15,6 +21,7 @@ repositories {
     // You can declare any Maven/Ivy/file repository here.
     jcenter()
 }
+
 
 dependencies {
     // This dependency is exported to consumers, that is to say found on their compile classpath.
@@ -26,4 +33,3 @@ dependencies {
     // Use JUnit test framework
     testImplementation 'junit:junit:4.12'
 }
-
