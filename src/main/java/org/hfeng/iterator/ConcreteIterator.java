@@ -22,5 +22,3 @@ public class ConcreteIterator implements Iterator {
     return (index < concreteAggregator.getNames().length);
   }
 }
-
-

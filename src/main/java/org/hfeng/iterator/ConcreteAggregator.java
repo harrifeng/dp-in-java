@@ -12,6 +12,4 @@ public class ConcreteAggregator implements Aggregator {
   public Iterator getIterator() {
     return new ConcreteIterator(this);
   }
-
-
 }
