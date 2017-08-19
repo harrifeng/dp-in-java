@@ -1,6 +1,6 @@
 package org.hfeng.iterator;
 
-public class Main {
+public class Demo {
 
   public static void main(String[] args) {
     ConcreteAggregator concreteAggregator = new ConcreteAggregator();
