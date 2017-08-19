@@ -2,7 +2,7 @@ package org.hfeng.iterator;
 
 public class ConcreteAggregator implements Aggregator {
 
-  public String names[] = {"Alice", "Bell", "Carl"};
+  private String names[] = {"Alice", "Bell", "Carl"};
 
   @Override
   public Iterator getIterator() {
@@ -24,8 +24,6 @@ public class ConcreteAggregator implements Aggregator {
     @Override
     public boolean hasNext() {
       return (index < names.length);
-
-
     }
   }
 }
