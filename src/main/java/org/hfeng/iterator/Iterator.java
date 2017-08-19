@@ -2,7 +2,7 @@ package org.hfeng.iterator;
 
 public interface Iterator {
 
-  public boolean hasNext();
+  boolean hasNext();
 
-  public Object next();
+  Object next();
 }

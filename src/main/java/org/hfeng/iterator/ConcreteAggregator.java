@@ -23,10 +23,9 @@ public class ConcreteAggregator implements Aggregator {
 
     @Override
     public boolean hasNext() {
-      if (index < names.length) {
-        return true;
-      }
-      return false;
+      return (index < names.length);
+
+
     }
   }
 }
