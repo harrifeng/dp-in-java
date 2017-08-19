@@ -2,28 +2,16 @@ package org.hfeng.iterator;
 
 public class ConcreteAggregator implements Aggregator {
 
+  public String[] getNames() {
+    return names;
+  }
+
   private String names[] = {"Alice", "Bell", "Carl"};
 
   @Override
   public Iterator getIterator() {
-    return new ConcreteIterator();
+    return new ConcreteIterator(this);
   }
 
-  class ConcreteIterator implements Iterator {
 
-    private int index;
-
-    @Override
-    public String next() {
-      if (this.hasNext()) {
-        return names[index++];
-      }
-      return null;
-    }
-
-    @Override
-    public boolean hasNext() {
-      return (index < names.length);
-    }
-  }
 }
