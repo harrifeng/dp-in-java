@@ -13,6 +13,4 @@ public class Receiver {
     this.status = false;
     System.out.println("status is false now");
   }
-
-
 }
